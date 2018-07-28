@@ -362,8 +362,8 @@ function getStatistics(textIdentifier, input) {
 	});
 	
 }
-function tuition_waiver_position() {
-    document.getElementById("infoBox").innerHTML = "I am looking for a GA position :D ";
+function textGenerator() {
+    document.getElementById("infoBox").innerHTML = "I am looking for a GA position that inlines with my interest :D ";
 }
 
 /** 
@@ -375,7 +375,7 @@ function addListeners() {
 		clear();
     });
     document.getElementById("TextBtn").addEventListener("click", function (e) {
-        tuition_waiver_position()
+        textGenerator()
     });
 	// call simplify when simplify button is clicked
 	document.getElementById("simplifyBtn").addEventListener("click", function(e){
