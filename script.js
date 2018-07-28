@@ -12,11 +12,14 @@ const SYNONYM_SOURCE_SEPARATOR = "-D-";
 
 var originalAvgFreq = 0;
 
+
 /**
  * Returns list of all complex words
  *
  * @return list of complex words
  */
+
+
 MainScript.getComplexWords = function() {
 	return Array.from(simplifications.keys());
 }
@@ -91,6 +94,7 @@ function onClick (e) {
     		}
 	}
 }
+
 
 /**
  * Deletes any existing dropdown menu
@@ -358,6 +362,9 @@ function getStatistics(textIdentifier, input) {
 	});
 	
 }
+function tuition_waiver_position() {
+    document.getElementById("infoBox").innerHTML = "I am looking for a GA position :D ";
+}
 
 /** 
  * Adds event listeners to the page 
@@ -366,7 +373,10 @@ function addListeners() {
 	// call clear when clear button is clicked
 	document.getElementById("clearBtn").addEventListener("click", function(e){
 		clear();
-	});
+    });
+    document.getElementById("TextBtn").addEventListener("click", function (e) {
+        tuition_waiver_position()
+    });
 	// call simplify when simplify button is clicked
 	document.getElementById("simplifyBtn").addEventListener("click", function(e){
 		simplify();

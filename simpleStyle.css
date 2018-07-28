@@ -55,6 +55,9 @@ button.disabled {
 	border-bottom-color: #e6e6e6;
 	color: #808080;
 }
+    button.text {
+        left: 295px;
+    }
 
 /*
  * === Style for Statistics box === 
